@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Oswald, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px, 1fr, 300px;
+  grid-template-areas: "header header", "main main",
+    "footer-section footer-section";
+}
+
+nav ul {
+  display: flex;
+  gap: 1em;
+  justify-content: baseline;
+  list-style: none;
+}
